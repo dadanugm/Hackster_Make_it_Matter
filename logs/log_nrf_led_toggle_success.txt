@@ -1,0 +1,77 @@
+uart:~$ matter_bridge scan
+Scanning for 10 s ...
+Scan result:
+---------------------------------------------------------------------
+| Index |      Address      |                   UUID                 
+---------------------------------------------------------------------
+| 0     | c8:90:fa:2b:b0:cd | 0xbcd1 (Led Button Service)
+uart:~$ matter_bridge add 0
+Found device address
+Done
+uart:~$ I: Connected: C8:90:FA:2B:B0:CD (random)
+I: The GATT discovery completed
+I: Added device to dynamic endpoint 3 (index=0)
+I: Created 0x100 device type on the endpoint 3
+I: Updating state of the BleOnOffLightDataProvider, cluster ID: 6, attribute ID: 0.
+I: 271665 [EM]>>> [E:3404r S:0 M:129023919] (U) Msg RX from 0:88A1FA034C4432A9 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+I: 271677 [IN]CASE Server received Sigma1 message . Starting handshake. EC 0x20006338
+I: 271684 [IN]CASE Server disabling CASE session setups
+I: 271689 [EM]<<< [E:3404r S:0 M:190771172 (Ack:129023919)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 271702 [IN](U) Sending msg 190771172 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:40461'
+I: 271712 [SC]Received Sigma1 msg
+I: 271720 [SC]CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+I: 271900 [EM]<<< [E:3404r S:0 M:190771173 (Ack:129023919)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+I: 271913 [IN](U) Sending msg 190771173 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:40461'
+I: 271923 [SC]Sent Sigma2 msg
+I: 271936 [EM]>>> [E:3404r S:0 M:129023920 (Ack:190771173)] (U) Msg RX from 0:88A1FA034C4432A9 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+I: 271949 [EM]<<< [E:3404r S:0 M:190771174 (Ack:129023920)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 271962 [IN](U) Sending msg 190771174 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:40461'
+I: 271972 [SC]Received Sigma3 msg
+E: 271980 [SC]The device does not support GetClock_RealTimeMS() API: 3.  Falling back to Last Known Good UTC Time
+E: 272156 [DL]Long dispatch time: 166 ms, for event type 2
+I: 272166 [EM]<<< [E:3404r S:0 M:190771175 (Ack:129023920)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 272179 [IN](U) Sending msg 190771175 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:40461'
+I: 272191 [SC]SecureSession[0x20004c58]: Moving from state 'kEstablishing' --> 'kActive'
+D: 272199 [IN]SecureSession[0x20004c58]: Activated - Type:2 LSID:47178
+D: 272205 [IN]New secure session activated for device <000000000001B669, 1>, LSID:47178 PSID:57961!
+I: 272214 [IN]CASE Session established to peer: <000000000001B669, 1>
+I: 272220 [IN]CASE Server enabling CASE session setups
+D: 272229 [IN]SecureSession[0x20004d10]: Allocated Type:2 LSID:47179
+I: 272238 [EM]>>> [E:3405r S:47178 M:148456793] (S) Msg RX from 1:000000000001B669 [129C] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 272250 [ZCL]Toggle ep3 on/off from state 0 to 1
+I: Updating state of the BleOnOffLightDataProvider, cluster ID: 6, attribute ID: 0.
+I: 272263 [EM]<<< [E:3405r S:47178 M:76456518 (Ack:148456793)] (S) Msg TX to 1:000000000001B669 [129C] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 272276 [IN](S) Sending msg 76456518 on secure session with LSID: 47178
+I: 272285 [EM]>>> [E:3404r S:0 M:129023921 (Ack:190771175)] (U) Msg RX from 0:88A1FA034C4432A9 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 272344 [EM]>>> [E:3405r S:47178 M:148456794 (Ack:76456518)] (S) Msg RX from 1:000000000001B669 [129C] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 403530 [EM]>>> [E:45752r S:0 M:101988164] (U) Msg RX from 0:211715A43F5B616E [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+I: 403542 [IN]CASE Server received Sigma1 message . Starting handshake. EC 0x20006338
+I: 403549 [IN]CASE Server disabling CASE session setups
+I: 403555 [EM]<<< [E:45752r S:0 M:190771176 (Ack:101988164)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 403568 [IN](U) Sending msg 190771176 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:50922'
+I: 403578 [SC]Received Sigma1 msg
+I: 403585 [SC]CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+I: 403768 [EM]<<< [E:45752r S:0 M:190771177 (Ack:101988164)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+I: 403780 [IN](U) Sending msg 190771177 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:50922'
+I: 403791 [SC]Sent Sigma2 msg
+I: 403826 [EM]>>> [E:45752r S:0 M:101988165 (Ack:190771177)] (U) Msg RX from 0:211715A43F5B616E [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+I: 403840 [EM]<<< [E:45752r S:0 M:190771178 (Ack:101988165)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 403853 [IN](U) Sending msg 190771178 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:50922'
+I: 403863 [SC]Received Sigma3 msg
+E: 403871 [SC]The device does not support GetClock_RealTimeMS() API: 3.  Falling back to Last Known Good UTC Time
+E: 404047 [DL]Long dispatch time: 166 ms, for event type 2
+I: 404057 [EM]<<< [E:45752r S:0 M:190771179 (Ack:101988165)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 404070 [IN](U) Sending msg 190771179 to IP address 'UDP:[2001:f40:907:4d2e:8f30:b3ba:e7f6:b2f5]:50922'
+I: 404082 [SC]SecureSession[0x20004d10]: Moving from state 'kEstablishing' --> 'kActive'
+D: 404090 [IN]SecureSession[0x20004d10]: Activated - Type:2 LSID:47179
+D: 404096 [IN]New secure session activated for device <000000000001B669, 1>, LSID:47179 PSID:8847!
+I: 404105 [IN]CASE Session established to peer: <000000000001B669, 1>
+I: 404111 [IN]CASE Server enabling CASE session setups
+D: 404117 [IN]SecureSession[0x20004dc8]: Allocated Type:2 LSID:47180
+I: 404137 [EM]>>> [E:45753r S:47179 M:49716724] (S) Msg RX from 1:000000000001B669 [129C] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 404149 [ZCL]Toggle ep3 on/off from state 1 to 0
+I: Updating state of the BleOnOffLightDataProvider, cluster ID: 6, attribute ID: 0.
+I: 404162 [EM]<<< [E:45753r S:47179 M:22797663 (Ack:49716724)] (S) Msg TX to 1:000000000001B669 [129C] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 404175 [IN](S) Sending msg 22797663 on secure session with LSID: 47179
+I: 404184 [EM]>>> [E:45752r S:0 M:101988166 (Ack:190771179)] (U) Msg RX from 0:211715A43F5B616E [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 404235 [EM]>>> [E:45753r S:47179 M:49716725 (Ack:22797663)] (S) Msg RX from 1:000000000001B669 [129C] --- Type 0000:10 (SecureChannel:StandaloneAck)

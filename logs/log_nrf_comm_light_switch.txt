@@ -1,0 +1,361 @@
+uart:~$ *** Booting nRF Connect SDK v2.5.0-rc2 ***
+I: Init CHIP stack
+I: 271 [DL]BLE address: CE:CF:97:FC:DC:35
+D: 307 [DL]WiFiManager has been initialized
+I: 311 [SVR]Subscription persistence not supported
+I: 316 [SVR]Server initializing...
+I: 319 [TS]Last Known Good Time: 2023-11-15T21:08:31
+I: 324 [DMG]AccessControl: initializing
+I: 328 [DMG]Examples::AccessControlDelegate::Init
+I: 332 [DMG]AccessControl: setting
+I: 335 [DMG]DefaultAclStorage: initializing
+I: 339 [DMG]DefaultAclStorage: 0 entries loaded
+D: 343 [IN]UDP::Init bind&listen port=5540
+E: 347 [IN]SO_REUSEPORT failed: 109
+D: 356 [IN]UDP::Init bound to port=5540
+D: 360 [IN]BLEBase::Init - setting/overriding transport
+D: 365 [IN]TransportMgr initialized
+I: 370 [ZCL]Using ZAP configuration...
+I: 374 [DMG]AccessControlCluster: initializing
+D: 379 [DL]Boot reason: 1
+I: 381 [ZCL]Initiating Admin Commissioning cluster.
+I: 386 [DIS]Updating services using commissioning mode 0
+I: 391 [DIS]CHIP minimal mDNS started advertising.
+I: 396 [IN]CASE Server enabling CASE session setups
+D: 401 [IN]SecureSession[0x20004288]: Allocated Type:2 LSID:60684
+I: 407 [SVR]Joining Multicast groups
+I: 410 [SVR]Server Listening...
+I: 413 [DL]Device Configuration:
+I: 416 [DL]  Serial Number: 11223344556677889900
+I: 420 [DL]  Vendor Id: 65521 (0xFFF1)
+I: 424 [DL]  Product Id: 32772 (0x8004)
+I: 427 [DL]  Product Name: not-specified
+I: 431 [DL]  Hardware Version: 0
+I: 434 [DL]  Setup Pin Code (0 for UNKNOWN/ERROR): 20202021
+I: 439 [DL]  Setup Discriminator (0xFFFF for UNKNOWN/ERROR): 3840 (0xF00)
+I: 446 [DL]  Manufacturing Date: 2022-01-01
+I: 449 [DL]  Device Type: 65535 (0xFFFF)
+I: 453 [SVR]SetupQRCode: [MT:4CT9142C00KA0648G00]
+I: 458 [SVR]Copy/paste the below URL in a browser to see the QR Code:
+I: 464 [SVR]https://project-chip.github.io/connectedhomeip/qrcode.html?data=MT%3A4CT9142C00KA0648G00
+I: 473 [SVR]Manual pairing code: [34970112332]
+I: 478 [DL]CHIP task running
+I: Initialize binding Handler
+I: 483 [SVR]Cannot load binding table: a0
+I: Binding Table size: [0]:
+OK
+I: Software update is disabled
+D: 7929 [IN]SecureSession[0x20004340]: Allocated Type:1 LSID:60685
+D: 7935 [DL]CHIPoBLE advertising set to on
+I: 7939 [DIS]Updating services using commissioning mode 1
+I: 7944 [DIS]CHIP minimal mDNS started advertising.
+D: 7949 [DL]Using wifi MAC for hostname
+I: 7953 [DIS]Advertise commission parameter vendorID=65521 productID=32772 discriminator=3840/15 cm=1
+D: 7962 [DIS]Responding with _matterc._udp.local
+D: 7966 [DIS]Responding with 9C2FE18D474F3D34._matterc._udp.local
+D: 7972 [DIS]Responding with F4CE36001F78.local
+D: 7976 [DIS]Responding with F4CE36001F78.local
+D: 7981 [DIS]Responding with _V65521._sub._matterc._udp.local
+D: 7986 [DIS]Responding with _S15._sub._matterc._udp.local
+D: 7991 [DIS]Responding with _L3840._sub._matterc._udp.local
+D: 7997 [DIS]Responding with _CM._sub._matterc._udp.local
+D: 8002 [DIS]Responding with 9C2FE18D474F3D34._matterc._udp.local
+I: 8008 [DIS]CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 9C2FE18D474F3D34.
+I: 8017 [DIS]mDNS service published: _matterc._udp
+I: 8025 [DL]CHIPoBLE advertising started
+I: 8029 [DL]NFC Tag emulation started
+I: 35429 [DL]BLE connection established (ConnId: 0x00)
+I: 35434 [DL]Current number of connections: 1/1
+I: 35438 [DL]CHIPoBLE advertising stopped
+I: 35442 [DL]NFC Tag emulation stopped
+I: 56606 [DL]BLE GAP connection terminated (reason 0x13)
+I: 56611 [DL]Current number of connections: 0/1
+I: 56618 [DL]CHIPoBLE advertising started
+I: 56622 [DL]NFC Tag emulation started
+I: 61707 [DL]BLE connection established (ConnId: 0x00)
+I: 61712 [DL]Current number of connections: 1/1
+I: 61717 [DL]CHIPoBLE advertising stopped
+I: 61721 [DL]NFC Tag emulation stopped
+D: 62542 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 62549 [BLE]local and remote recv window sizes = 5
+I: 62554 [BLE]selected BTP version 4
+I: 62557 [BLE]using BTP fragment sizes rx 244 / tx 244.
+D: 62632 [DL]ConnId: 0x00, New CCCD value: 0x0002
+D: 62637 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 6)
+D: 62644 [IN]BLE EndPoint 0x2000ae78 Connection Complete
+I: 62649 [DL]CHIPoBLE connection established (ConnId: 0x00, GATT MTU: 247)
+D: 62722 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 62730 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 62738 [EM]>>> [E:29803r S:0 M:40107859] (U) Msg RX from 0:4173E7084D6DEF13 [0000] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)
+I: 62751 [EM]<<< [E:29803r S:0 M:53127281] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+I: 62763 [IN](U) Sending msg 53127281 to IP address 'BLE'
+D: 62768 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 140)
+D: 62857 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 62865 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 62873 [EM]>>> [E:29803r S:0 M:40107860] (U) Msg RX from 0:4173E7084D6DEF13 [0000] --- Type 0000:22 (SecureChannel:PASE_Pake1)
+I: 64243 [EM]<<< [E:29803r S:0 M:53127282] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)
+I: 64255 [IN](U) Sending msg 53127282 to IP address 'BLE'
+D: 64260 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 132)
+E: 64267 [DL]Long dispatch time: 1402 ms, for event type 16388
+D: 64342 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 64350 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 64358 [EM]>>> [E:29803r S:0 M:40107861] (U) Msg RX from 0:4173E7084D6DEF13 [0000] --- Type 0000:24 (SecureChannel:PASE_Pake3)
+I: 64370 [EM]<<< [E:29803r S:0 M:53127283] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 64381 [IN](U) Sending msg 53127283 to IP address 'BLE'
+D: 64386 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 35)
+I: 64394 [SC]SecureSession[0x20004340]: Moving from state 'kEstablishing' --> 'kActive'
+D: 64402 [IN]SecureSession[0x20004340]: Activated - Type:1 LSID:60685
+D: 64408 [IN]New secure session activated for device <FFFFFFFB00000000, 0>, LSID:60685 PSID:12018!
+I: 64417 [SVR]Commissioning completed session establishment step
+I: 64423 [DIS]Updating services using commissioning mode 0
+I: 64428 [DIS]CHIP minimal mDNS started advertising.
+D: 64434 [DL]CHIPoBLE advertising set to off
+I: 64438 [SVR]Device completed Rendezvous process
+D: 64477 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 64485 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 64494 [EM]>>> [E:29804r S:60685 M:109411088] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)
+D: 64505 [IM]Received Read request
+I: 64514 [EM]<<< [E:29804r S:60685 M:175573318] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+I: 64524 [IN](S) Sending msg 175573318 on secure session with LSID: 60685
+D: 64531 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 64612 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 64620 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 21)
+D: 64747 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 64755 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 64763 [EM]>>> [E:29805r S:60685 M:109411089] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 64775 [FS]GeneralCommissioning: Received ArmFailSafe (60s)
+I: 64782 [EM]<<< [E:29805r S:60685 M:175573319] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 64793 [IN](S) Sending msg 175573319 on secure session with LSID: 60685
+D: 64800 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+D: 64882 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 64890 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 64898 [EM]>>> [E:29806r S:60685 M:109411090] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 64912 [EM]<<< [E:29806r S:60685 M:175573320] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 64924 [IN](S) Sending msg 175573320 on secure session with LSID: 60685
+D: 64930 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+D: 65017 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65025 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 65033 [EM]>>> [E:29807r S:60685 M:109411091] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 65045 [ZCL]OpCreds: Certificate Chain request received for PAI
+I: 65054 [EM]<<< [E:29807r S:60685 M:175573321] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 65066 [IN](S) Sending msg 175573321 on secure session with LSID: 60685
+D: 65072 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 65152 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65160 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 65242 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65250 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 48)
+D: 65332 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65340 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 65348 [EM]>>> [E:29808r S:60685 M:109411092] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 65360 [ZCL]OpCreds: Certificate Chain request received for DAC
+I: 65370 [EM]<<< [E:29808r S:60685 M:175573322] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 65381 [IN](S) Sending msg 175573322 on secure session with LSID: 60685
+D: 65388 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 65467 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65475 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 65557 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65565 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 78)
+D: 65647 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65655 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 65663 [EM]>>> [E:29809r S:60685 M:109411093] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 65676 [ZCL]OpCreds: Received an AttestationRequest command
+I: 65711 [ZCL]OpCreds: AttestationRequest successful.
+I: 65720 [EM]<<< [E:29809r S:60685 M:175573323] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 65731 [IN](S) Sending msg 175573323 on secure session with LSID: 60685
+D: 65738 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 65827 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65835 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 65917 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 65925 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 237)
+D: 66007 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 66053 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 66061 [EM]>>> [E:29810r S:60685 M:109411094] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 66073 [ZCL]OpCreds: Received a CSRRequest command
+I: 66220 [ZCL]OpCreds: AllocatePendingOperationalKey succeeded
+I: 66255 [ZCL]OpCreds: CSRRequest successful.
+I: 66261 [EM]<<< [E:29810r S:60685 M:175573324] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 66273 [IN](S) Sending msg 175573324 on secure session with LSID: 60685
+D: 66279 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+E: 66287 [DL]Long dispatch time: 234 ms, for event type 16388
+D: 66367 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 66375 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 138)
+D: 66457 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 66503 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+D: 66593 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 66602 [EM]>>> [E:29811r S:60685 M:109411095] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 66614 [ZCL]OpCreds: Received an AddTrustedRootCertificate command
+I: 66673 [ZCL]OpCreds: AddTrustedRootCertificate successful.
+I: 66680 [EM]<<< [E:29811r S:60685 M:175573325] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 66691 [IN](S) Sending msg 175573325 on secure session with LSID: 60685
+D: 66698 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 68)
+E: 66706 [DL]Long dispatch time: 112 ms, for event type 16388
+D: 66772 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 66818 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+D: 66952 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+D: 67043 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 67054 [EM]>>> [E:29812r S:60685 M:109411096] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 67066 [ZCL]OpCreds: Received an AddNOC command
+I: 67072 [FP]Validating NOC chain
+I: 67182 [FP]NOC chain validation successful
+I: 67186 [FP]Added new fabric at index: 0x1
+I: 67190 [FP]Assigned compressed fabric ID: 0xD1B819AF12D80AE5, node ID: 0x0000000000000001
+I: 67198 [TS]Last Known Good Time: 2023-11-15T21:08:31
+I: 67203 [TS]New proposed Last Known Good Time: 2021-01-01T00:00:00
+I: 67209 [TS]Retaining current Last Known Good Time
+I: 67221 [ZCL]OpCreds: ACL entry created for Fabric index 0x1 CASE Admin Subject 0x000000000001B669
+D: 67230 [DL]Using wifi MAC for hostname
+I: 67234 [DIS]Advertise operational node D1B819AF12D80AE5-0000000000000001
+D: 67241 [DIS]Responding with _matter._tcp.local
+D: 67245 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 67253 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 67260 [DIS]Responding with F4CE36001F78.local
+D: 67264 [DIS]Responding with F4CE36001F78.local
+D: 67269 [DIS]Responding with _ID1B819AF12D80AE5._sub._matter._tcp.local
+I: 67275 [DIS]CHIP minimal mDNS configured as 'Operational device'; instance name: D1B819AF12D80AE5-0000000000000001.
+I: 67285 [DIS]mDNS service published: _matter._tcp
+I: 67290 [ZCL]OpCreds: successfully created fabric index 0x1 via AddNOC
+I: 67297 [EM]<<< [E:29812r S:60685 M:175573326] (S) Msg TX to 1:FFFFFFFB00000000 [0AE5] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 67309 [IN](S) Sending msg 175573326 on secure session with LSID: 60685
+D: 67315 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+E: 67323 [DL]Long dispatch time: 280 ms, for event type 16388
+D: 67402 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67410 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 67418 [EM]>>> [E:29813r S:60685 M:109411097] (S) Msg RX from 1:FFFFFFFB00000000 [0AE5] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 67432 [EM]<<< [E:29813r S:60685 M:175573327] (S) Msg TX to 1:FFFFFFFB00000000 [0AE5] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 67443 [IN](S) Sending msg 175573327 on secure session with LSID: 60685
+D: 67450 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+D: 67537 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67583 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 67591 [EM]>>> [E:29814r S:60685 M:109411098] (S) Msg RX from 1:FFFFFFFB00000000 [0AE5] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 67603 [DL]Connecting to WiFi network: WIFI2B282
+D: 67620 [DL]WiFi scanning started...
+D: 70090 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 3)
+D: 70147 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+I: 72237 [DL]Wi-Fi scan done (0)
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+OK
+I: 73804 [DL]Connection to WIFI2B282 requested [RSSI=-47]
+E: 73809 [DL]Long dispatch time: 1572 ms, for event type 3
+D: 73814 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+D: 76321 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 3)
+D: 76402 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+I: 78036 [DL]Connected to WiFi network
+I: 78043 [EM]<<< [E:29814r S:60685 M:175573328] (S) Msg TX to 1:FFFFFFFB00000000 [0AE5] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 78055 [IN](S) Sending msg 175573328 on secure session with LSID: 60685
+D: 78062 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 69)
+D: 78069 [DL]Using wifi MAC for hostname
+I: 78073 [DIS]Advertise operational node D1B819AF12D80AE5-0000000000000001
+D: 78082 [DIS]Responding with _matter._tcp.local
+D: 78087 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 78095 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 78102 [DIS]Responding with F4CE36001F78.local
+D: 78107 [DIS]Responding with F4CE36001F78.local
+D: 78111 [DIS]Responding with _ID1B819AF12D80AE5._sub._matter._tcp.local
+I: 78118 [DIS]CHIP minimal mDNS configured as 'Operational device'; instance name: D1B819AF12D80AE5-0000000000000001.
+I: 78128 [DIS]mDNS service published: _matter._tcp
+I: 78132 [SVR]Operational advertising enabled
+I: 78138 [SWU]Stopping the watchdog timer
+I: 78142 [SWU]Starting the periodic query timer, timeout: 86400 seconds
+E: 78148 [SVR]Server initialization complete
+I: 78152 [DIS]Updating services using commissioning mode 0
+E: 78158 [IN]SO_REUSEPORT failed: 109
+I: 78162 [DIS]CHIP minimal mDNS started advertising.
+D: 78183 [DL]Using wifi MAC for hostname
+I: 78187 [DIS]Advertise operational node D1B819AF12D80AE5-0000000000000001
+D: 78194 [DIS]Responding with _matter._tcp.local
+D: 78198 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 78206 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 78213 [DIS]Responding with F4CE36001F78.local
+D: 78217 [DIS]Responding with F4CE36001F78.local
+D: 78222 [DIS]Responding with _ID1B819AF12D80AE5._sub._matter._tcp.local
+I: 78228 [DIS]CHIP minimal mDNS configured as 'Operational device'; instance name: D1B819AF12D80AE5-0000000000000001.
+I: 78246 [DIS]mDNS service published: _matter._tcp
+E: 78252 [DL]Long dispatch time: 104 ms, for event type 32784
+D: 78258 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+I: 78266 [DIS]Updating services using commissioning mode 0
+E: 78272 [IN]SO_REUSEPORT failed: 109
+I: 78275 [DIS]CHIP minimal mDNS started advertising.
+D: 78297 [DL]Using wifi MAC for hostname
+I: 78302 [DIS]Advertise operational node D1B819AF12D80AE5-0000000000000001
+D: 78309 [DIS]Responding with _matter._tcp.local
+D: 78314 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 78321 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 78328 [DIS]Responding with F4CE36001F78.local
+D: 78334 [DIS]Responding with F4CE36001F78.local
+D: 78344 [DIS]Responding with _ID1B819AF12D80AE5._sub._matter._tcp.local
+I: 78352 [DIS]CHIP minimal mDNS configured as 'Operational device'; instance name: D1B819AF12D80AE5-0000000000000001.
+I: 78372 [DIS]mDNS service published: _matter._tcp
+E: 78378 [DL]Long dispatch time: 111 ms, for event type 32784
+I: 78386 [EM]>>> [E:29815r S:0 M:40107862] (U) Msg RX from 0:8F6BCB73A931310D [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+I: 78398 [IN]CASE Server received Sigma1 message . Starting handshake. EC 0x20005c48
+I: 78405 [IN]CASE Server disabling CASE session setups
+I: 78410 [EM]<<< [E:29815r S:0 M:53127284 (Ack:40107862)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 78423 [IN](U) Sending msg 53127284 to IP address 'UDP:[fe80::13f3:a1fe:a7d3:6c9e]:36867'
+I: 78432 [SC]Received Sigma1 msg
+I: 78439 [SC]CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+I: 78619 [EM]<<< [E:29815r S:0 M:53127285 (Ack:40107862)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+I: 78632 [IN](U) Sending msg 53127285 to IP address 'UDP:[fe80::13f3:a1fe:a7d3:6c9e]:36867'
+I: 78641 [SC]Sent Sigma2 msg
+I: 78714 [EM]>>> [E:29815r S:0 M:40107863 (Ack:53127285)] (U) Msg RX from 0:8F6BCB73A931310D [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+I: 78727 [EM]<<< [E:29815r S:0 M:53127286 (Ack:40107863)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 78740 [IN](U) Sending msg 53127286 to IP address 'UDP:[fe80::13f3:a1fe:a7d3:6c9e]:36867'
+I: 78749 [SC]Received Sigma3 msg
+E: 78758 [SC]The device does not support GetClock_RealTimeMS() API: 3.  Falling back to Last Known Good UTC Time
+E: 78931 [DL]Long dispatch time: 163 ms, for event type 2
+D: 78936 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 78948 [EM]<<< [E:29815r S:0 M:53127287 (Ack:40107863)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 78961 [IN](U) Sending msg 53127287 to IP address 'UDP:[fe80::13f3:a1fe:a7d3:6c9e]:36867'
+I: 78972 [SC]SecureSession[0x20004288]: Moving from state 'kEstablishing' --> 'kActive'
+D: 78979 [IN]SecureSession[0x20004288]: Activated - Type:2 LSID:60684
+D: 78986 [IN]New secure session activated for device <000000000001B669, 1>, LSID:60684 PSID:12019!
+I: 78998 [IN]CASE Session established to peer: <000000000001B669, 1>
+I: 79007 [IN]CASE Server enabling CASE session setups
+D: 79012 [IN]SecureSession[0x200043f8]: Allocated Type:2 LSID:60686
+I: 79123 [EM]>>> [E:29816r S:60684 M:161092387] (S) Msg RX from 1:000000000001B669 [0AE5] --- Type 0001:08 (IM:InvokeCommandRequest)
+I: 79135 [FS]GeneralCommissioning: Received CommissioningComplete
+I: 79143 [FP]Metadata for Fabric 0x1 persisted to storage.
+I: 79161 [TS]Committing Last Known Good Time to storage: 2023-11-15T21:08:31
+I: 79169 [ZCL]OpCreds: Fabric index 0x1 was committed to storage. Compressed Fabric Id 0xD1B819AF12D80AE5, FabricId 0000000000000001, NodeId 0000000000000001, VendorId 0xFFF1
+I: 79185 [FS]GeneralCommissioning: Successfully commited pending fabric data
+I: 79192 [FS]Fail-safe cleanly disarmed
+I: 79196 [EM]<<< [E:29816r S:60684 M:142784655 (Ack:161092387)] (S) Msg TX to 1:000000000001B669 [0AE5] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 79211 [IN](S) Sending msg 142784655 on secure session with LSID: 60684
+I: 79220 [SWU]Device commissioned, schedule a default provider query
+I: 79227 [SVR]Commissioning completed successfully
+I: 79232 [DIS]Updating services using commissioning mode 0
+E: 79237 [IN]SO_REUSEPORT failed: 109
+I: 79241 [DIS]CHIP minimal mDNS started advertising.
+D: 79270 [DL]Using wifi MAC for hostname
+I: 79275 [DIS]Advertise operational node D1B819AF12D80AE5-0000000000000001
+D: 79282 [DIS]Responding with _matter._tcp.local
+D: 79287 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 79294 [DIS]Responding with D1B819AF12D80AE5-0000000000000001._matter._tcp.local
+D: 79301 [DIS]Responding with F4CE36001F78.local
+D: 79307 [DIS]Responding with F4CE36001F78.local
+D: 79313 [DIS]Responding with _ID1B819AF12D80AE5._sub._matter._tcp.local
+I: 79320 [DIS]CHIP minimal mDNS configured as 'Operational device'; instance name: D1B819AF12D80AE5-0000000000000001.
+I: 79344 [DIS]mDNS service published: _matter._tcp
+D: 79349 [IN]Expiring all PASE sessions
+D: 79354 [IN]SecureSession[0x20004340]: MarkForEviction Type:1 LSID:60685
+I: 79361 [SC]SecureSession[0x20004340]: Moving from state 'kActive' --> 'kPendingEviction'
+D: 79369 [IN]SecureSession[0x20004340]: Released - Type:1 LSID:60685
+D: 79375 [IN]Clearing BLE pending packets.
+I: 79378 [BLE]Releasing end point's BLE connection back to application.
+I: 79385 [DL]Closing BLE GATT connection (ConnId 00)
+E: 79392 [DL]Long dispatch time: 172 ms, for event type 32781
+D: 79397 [DL]ConnId: 0x00, New CCCD value: 0x0000
+E: 79402 [BLE]no endpoint for unsub recvd
+I: 79406 [EM]>>> [E:29815r S:0 M:40107864 (Ack:53127287)] (U) Msg RX from 0:8F6BCB73A931310D [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 79422 [EM]>>> [E:29816r S:60684 M:161092388 (Ack:142784655)] (S) Msg RX from 1:000000000001B669 [0AE5] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 79462 [DL]BLE GAP connection terminated (reason 0x16)
+I: 79467 [DL]Current number of connections: 0/1
+E: 109227 [SWU]No suitable OTA Provider candidate found
+I: 109232 [SWU]No provider available
